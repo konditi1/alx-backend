@@ -13,6 +13,8 @@ class MRUCache(BaseCaching):
     MRUCache defines:
     - constants of your caching system
     - where your data are stored (in a dictionary)
+    return:
+    - the value in the cache linked to the key
     """
 
     def __init__(self):
