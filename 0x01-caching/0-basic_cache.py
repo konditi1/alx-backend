@@ -22,15 +22,20 @@ class BaseCaching:
         for key in sorted(self.cache_data.keys()):
             print("{}: {}".format(key, self.cache_data.get(key)))
 
-    # def put(self, key, item):
-    #     """ Add an item in the cache
-    #     """
-    #     raise NotImplementedError("put must be implemented in your cache class")
+    def put(self, key, item):
+        """ Add an item in the cache
+        """
+        raise NotImplementedError("put must be implemented in your cache class")
 
-    # def get(self, key):
-    #     """ Get an item by key
-    #     """
-    #     raise NotImplementedError("get must be implemented in your cache class")
+    def get(self, key):
+        """ Get an item by key
+        """
+        raise NotImplementedError("get must be implemented in your cache class")
+
+
+"""
+BasicCache which inherits from BaseCaching
+"""
 
 
 class BasicCache(BaseCaching):
