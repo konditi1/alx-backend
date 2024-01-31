@@ -6,6 +6,7 @@
 
 from base_caching import BaseCaching
 
+
 class LFUCache(BaseCaching):
     """ LFU Caching system
     """
